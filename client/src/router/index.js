@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import User from '@/components/User';
+import Calendar from '@/components/Calendar';
 
 
 import JwPagination from 'jw-vue-pagination';
@@ -14,6 +15,11 @@ export default new Router({
       path: '/',
       name: 'User',
       component: User,
+    },
+    {
+      path: 'calendar',
+      name: 'Calendar',
+      component: Calendar,
     },
   ],
   mode: 'history',

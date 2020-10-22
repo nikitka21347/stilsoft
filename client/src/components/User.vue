@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
+      <calendar></calendar>
       <div class="col-sm-10">
         <h1 class="text-center">Пользователи</h1>
         <hr><br><br>
@@ -184,6 +185,7 @@
 <script>
 import axios from 'axios';
 import Alert from './Alert.vue';
+import Calendar from './Calendar.vue';
 
 export default {
   data() {
@@ -212,6 +214,7 @@ export default {
   },
   components: {
     alert: Alert,
+    calendar: Calendar,
   },
   methods: {
     sortArray() {
